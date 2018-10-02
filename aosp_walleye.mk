@@ -19,24 +19,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 
-$(call inherit-product, device/google/taimen/device.mk)
-$(call inherit-product-if-exists, vendor/google_devices/taimen/proprietary/device-vendor.mk)
+$(call inherit-product, device/google/walleye/device.mk)
+$(call inherit-product-if-exists, vendor/google_devices/walleye/proprietary/device-vendor.mk)
 
 PRODUCT_PACKAGES += \
     Dialer \
-    Launcher3QuickStep \
-    WallpaperPicker \
-    netutils-wrapper-1.0 \
-    vndk_package
+    Launcher3 \
+    WallpaperPicker
 
 PRODUCT_COPY_FILES += \
-    device/google/taimen/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+    device/google/walleye/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     frameworks/native/data/etc/aosp_excluded_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/aosp_excluded_hardware.xml
 
-#PRODUCT_RESTRICT_VENDOR_FILES := owner
+#PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
-PRODUCT_NAME := aosp_taimen
-PRODUCT_DEVICE := taimen
-PRODUCT_MODEL := AOSP on taimen
+PRODUCT_NAME := aosp_walleye
+PRODUCT_DEVICE := walleye
+PRODUCT_MODEL := AOSP on walleye
