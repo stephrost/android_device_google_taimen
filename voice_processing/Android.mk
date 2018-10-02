@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter taimen, $(TARGET_DEVICE)),)
+ifneq ($(filter walleye, $(TARGET_DEVICE)),)
 
 LOCAL_PATH:= $(call my-dir)
 
@@ -27,7 +27,6 @@ LOCAL_MODULE_RELATIVE_PATH := soundfx
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := qcom
 LOCAL_PROPRIETARY_MODULE := true
-LOCAL_CFLAGS := -Wall -Werror
 
 include $(BUILD_SHARED_LIBRARY)
 
