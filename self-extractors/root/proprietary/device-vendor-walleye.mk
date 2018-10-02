@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := walleye/BoardConfigPartial.mk
+LOCAL_STEM := walleye/device-partial.mk
 
--include vendor/google_devices/$(LOCAL_STEM)
--include vendor/qcom/$(LOCAL_STEM)
+$(call inherit-product-if-exists, vendor/google_devices/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/qcom/$(LOCAL_STEM))
