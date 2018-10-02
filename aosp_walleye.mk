@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 
 $(call inherit-product, device/google/walleye/device.mk)
-$(call inherit-product-if-exists, vendor/google_devices/walleye/proprietary/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/google_devices/muskie/proprietary/device-vendor-walleye.mk)
 
 PRODUCT_PACKAGES += \
     Dialer \
