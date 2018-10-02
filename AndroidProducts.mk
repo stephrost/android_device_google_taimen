@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_walleye.mk \
-    $(LOCAL_DIR)/du.mk
+    $(LOCAL_DIR)/omni_walleye.mk \
+    $(LOCAL_DIR)/omni_walleye_test.mk
