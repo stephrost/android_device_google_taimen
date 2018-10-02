@@ -16,10 +16,10 @@
 
 source ../../../common/clear-factory-images-variables.sh
 BUILD=4169385
-DEVICE=taimen
-PRODUCT=taimen
+DEVICE=walleye
+PRODUCT=walleye
 VERSION=opd1.170711.001
 SRCPREFIX=signed-
-BOOTLOADER=TMZ09x
+BOOTLOADER=mw8998-002.0048.00
 RADIO=g8998-00033-1707051711
 source ../../../common/generate-factory-images-common.sh
